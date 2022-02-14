@@ -1,0 +1,11 @@
+#main-display{
+    border: 1px solid black ;
+    height: 30px;
+    width: 30px;
+}
+
+#secondary-display{
+    border: 1px solid black ;
+    height: 30px;
+    width: 30px;
+}

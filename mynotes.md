@@ -15,14 +15,3 @@ AC > 2 display alanını da "" döndür
 
 backspace > eğer display alanında bir karakter varsa innertext'i çıkarır.
 
-
-operators:
-
-eğer display alanı boş değil ise 
-
-
-
-
-
-
-= operatörü

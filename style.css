@@ -1,11 +1,78 @@
-#main-display{
-    border: 1px solid black ;
-    height: 30px;
-    width: 30px;
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 
-#secondary-display{
-    border: 1px solid black ;
-    height: 30px;
-    width: 30px;
+body{
+    font-family: 'Helvetica Neue', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
 }
+
+.main-container{
+    background-color: black;
+    width: 31.25rem;
+    height: 52.5rem;
+    border-radius: 50px;
+    padding: 20px;
+    margin-top: 50px;
+}
+
+.display-container{
+    text-align: right;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    width: 28.75rem;
+    height: 15.63rem;
+    padding: 20px;
+    font-size: 100px;
+}
+
+
+#secondary-display{
+    opacity: 0.5;
+    font-size: 50px;
+    overflow: hidden;
+}
+
+.buttons-container{
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+}
+
+.button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #333;
+    border-radius: 50%;
+    font-size: 45px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    height: 100px;
+    width: 100px;
+    color: white;
+    border: none;
+}
+
+.function{
+    background-color: #a5a5a5;
+    color: black;
+}
+.operator{
+    background-color: #f1a33c;
+}
+
+.button:active{
+    background-color: rgba(255,255, 255, 0.8);
+}
+.button:hover{
+    opacity: 0.5;
+}
+

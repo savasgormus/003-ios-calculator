@@ -15,15 +15,16 @@ body{
 .main-container{
     background-color: black;
     width: 31.25rem;
-    height: 52.5rem;
+    /* height: 52.5rem; */
+    height: 100%;
     border-radius: 50px;
     padding: 20px;
     margin-top: 50px;
 }
 
 .display-container{
-    text-align: right;
     display: flex;
+    text-align: right;
     flex-direction: column;
     justify-content: space-evenly;
     width: 28.75rem;
@@ -41,22 +42,22 @@ body{
 
 .buttons-container{
     display: grid;
-    grid-gap: 10px;
+    gap: 10px;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(5, 1fr);
 }
 
 .button{
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    /* display: flex; */
+    /* justify-content: center; */
+    /* align-items: center; */
     background-color: #333;
+    width: 100px;
+    height: 100px;
     border-radius: 50%;
     font-size: 45px;
     cursor: pointer;
-    transition: all 0.3s ease-in-out;
-    height: 100px;
-    width: 100px;
+    transition: all 0.5s ease-in-out;
     color: white;
     border: none;
 }
@@ -70,7 +71,7 @@ body{
 }
 
 .button:active{
-    background-color: rgba(255,255, 255, 0.8);
+    background-color: rgba(158, 216, 22, 0.8);
 }
 .button:hover{
     opacity: 0.5;

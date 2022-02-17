@@ -2,13 +2,15 @@ const currentDisplayField = document.getElementById("main-display");
 const previousDisplayField = document.getElementById("secondary-display");
 const buttonsContainer = document.querySelector(".buttons-container");
 
+currentDisplayField.innerText = 0;
+
 buttonsContainer.addEventListener("click", (event) => {
     // number buttons
     if (event.target.classList.contains("number") && currentDisplayField.innerText.length < 8) 
     {
         if (
         (currentDisplayField.innerText == "" && event.target.value == 0) || 
-        currentDisplayField.innerText.split("")[0] == 0
+        (currentDisplayField.innerText.split("")[0] == 0 && !currentDisplayField.innerText.includes("."))
         ) {
             currentDisplayField.innerText = event.target.value;
         } else {
@@ -28,7 +30,7 @@ buttonsContainer.addEventListener("click", (event) => {
         const functions = event.target.value;
         switch (functions) {
             case "AC":
-                currentDisplayField.innerText = ""; 
+                currentDisplayField.innerText = "0"; 
                 previousDisplayField.innerText = "";
                 break;
             case "±":
